@@ -1,0 +1,17 @@
+﻿
+<div class="row">
+    
+        @foreach (var coctel in Model.drinks)
+        {
+    <div class="col-6">
+
+        @coctel.strDrink
+    </div>
+    <div class="col-6">
+        <button class="btn btn-link" onclick="getDetalle(@coctel.idDrink)">Ver detalle</button>
+    </div>
+           
+        }
+
+    
+</div>
