@@ -10,12 +10,12 @@ namespace CoctelesActinver.Controllers
 {
     public class CoctelesController : Controller
     {
-        public async Task<PartialViewResult> _GetByName(string nombre)
+        public async Task<PartialViewResult> _GetByName(string name)
         {
 
             IDataAPI getByName = new GetByName();
             CoctelesAPI coctelesAPI = new CoctelesAPI(getByName);
-            Cocteles model = await coctelesAPI.GetCocteles(nombre);
+            Cocteles model = await coctelesAPI.GetCocteles(name);
 
             return PartialView("_Cocteles",model);
         }

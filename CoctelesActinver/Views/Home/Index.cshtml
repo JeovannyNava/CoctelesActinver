@@ -5,15 +5,28 @@
 
 <div class="text-center">
     <h1 class="display-4">Cocteles Actinver</h1>
-    <div class="col-12">
-        <label for="busqueda">Buscar Coctel</label>
-        <input class="form-control" type="text" id="parametroBusqueda" placeholder="Presione enter para buscar..." />
+    <div class="row">
+        <div class="col-12">
+            <label for="busqueda">Buscar Coctel</label>
+            <input class="form-control" type="text" id="parametroBusqueda" placeholder="Presione enter para buscar..." />
+        </div>
+        <div class="col-12">
+            <label class="miro-radiobutton">
+                <input type="radio" value="0" name="searchBy" checked>
+                <span>Por Nombre</span>
+            </label>
+            <label class="miro-radiobutton">
+                <input type="radio" value="1" name="searchBy">
+                <span>Por ingrediente</span>
+            </label>
+
+        </div>
     </div>
+
     <div class="col-md-12 mt-4" id="busqueda">
 
     </div>
 
 
 </div>
-<div id="divModalDetail"></div>
-<script src="~/js/site.js"></script>
+
