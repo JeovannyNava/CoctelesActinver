@@ -9,5 +9,6 @@ namespace CoctelesActinver.Data
     public interface IDataAPI
     {
          Task<Cocteles> getCocteles(string parameter);
+
     }
 }

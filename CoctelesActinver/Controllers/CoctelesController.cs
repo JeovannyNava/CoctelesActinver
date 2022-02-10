@@ -35,7 +35,9 @@ namespace CoctelesActinver.Controllers
 
             IDataAPI getDetail = new GetDetail();
             CoctelesAPI coctelesAPI = new CoctelesAPI(getDetail);
-            Cocteles model = await coctelesAPI.GetCocteles(idDrink);
+            Cocteles coctel = await coctelesAPI.GetCocteles(idDrink);
+            var abstracDrink = new drinks();
+            var model = abstracDrink.getFirstElement(coctel);
 
             return PartialView(model);
         }
